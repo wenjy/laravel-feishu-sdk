@@ -1,0 +1,29 @@
+{
+    "name": "wenjy/laravel-feishu-sdk",
+    "description": "飞书 SDK for Laravel",
+    "keywords": ["feishu", "飞书","laravel", "sdk"],
+    "license": "MIT",
+    "require": {
+        "illuminate/container": "^5.1 || ^6.0 || ^7.0 || ^8.0 || ^9.0",
+        "wenjy/feishu-sdk": "dev-main"
+    },
+    "require-dev": {
+        "laravel/framework": "^8.5",
+        "friendsofphp/php-cs-fixer": "^3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelFeiShu\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelFeiShu\\ServiceProvider"
+            ],
+            "aliases": {
+                "FeiShu": "LaravelFeiShu\\Facade"
+            }
+        }
+    }
+}
