@@ -65,6 +65,7 @@ return [
          'default' => [
              'app_id'  => env('FEI_SHU_APPID', ''),
              'app_secret'  => env('FEI_SHU_APP_SECRET', ''),
+             'encrypt_key'  => env('FEI_SHU_ENCRYPT_KEY', ''),
          ],
      ],
 ];
